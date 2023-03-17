@@ -119,8 +119,8 @@ $ms9: calc($ms8 * $ratio); // 52px
 $ms10: calc($ms9 * $ratio); // 58px
 $ms11: calc($ms10 * $ratio); // 66px
 
-$font-family-primary: "Helvetica Neue", Helvetica, arial, sans-serif;
-$font-family-secondary: "Times New Roman", Times, serif;
+$font-family-primary: 'Helvetica Neue', Helvetica, arial, sans-serif;
+$font-family-secondary: 'Times New Roman', Times, serif;
 
 // ---
 // Settings: Spacing
@@ -159,15 +159,22 @@ $breakpoints: (
 *:before,
 *:after {
   // Reset box-sizing
+  box-sizing: border-box;
 }
 
 * {
   // Reset margin and font-size and font-weight
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-weight: normal;
 }
 
 img {
   // make images block level elements
   // make images responsive
+  display: block;
+  max-width: 100%;
 }
 
 /*---------------------------------------/*
