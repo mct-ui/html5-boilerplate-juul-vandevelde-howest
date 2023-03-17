@@ -252,8 +252,8 @@ figure {
 
 ul,
 ol {
-  padding-left: $space-s;
-  // list-style-position: inside;
+  // padding-left: $space-s;
+  list-style-position: inside;
 }
 
 li ul,
@@ -284,15 +284,20 @@ hr {
 }
 
 a {
-}
-
-a:hover {
+  color: $color-primary;
+  transition: all 0.1s ease-in-out;
 }
 
 a:visited {
+  color: $color-primary;
+}
+
+a:hover {
+  color: $color-primary-light;
 }
 
 a:active {
+  color: $color-primary-dark;
 }
 
 /*---------------------------------------/*

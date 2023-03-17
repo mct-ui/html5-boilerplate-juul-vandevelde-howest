@@ -100,7 +100,7 @@ figure {
 
 ul,
 ol {
-  padding-left: 1rem;
+  list-style-position: inside;
 }
 
 li ul,
@@ -128,6 +128,23 @@ hr {
   height: 1px;
   background: hsl(198.0786026201, 10%, 90%);
   margin-bottom: 1.5rem;
+}
+
+a {
+  color: hsl(198.0786026201, 100%, 40%);
+  transition: all 0.1s ease-in-out;
+}
+
+a:visited {
+  color: hsl(198.0786026201, 100%, 40%);
+}
+
+a:hover {
+  color: hsl(198.0786026201, 100%, 50%);
+}
+
+a:active {
+  color: hsl(198.0786026201, 100%, 30%);
 }
 
 /*---------------------------------------/*
